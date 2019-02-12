@@ -1,0 +1,85 @@
+/* // Tech page */
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+#tech_body {
+    text-align: center;
+    background-color: rgb(126, 124, 124);
+    padding: 10px 0px 50px 0px;
+}
+.tech_box {
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    width: 301px;
+    height: 301px;
+    padding: 0px;
+}
+#tech_body p {
+    font-size: 24px;
+}
+.groups {
+    display: inline-block;
+    text-align: center;
+}
+#tech_body h3{
+    color: black;
+    margin-top: 20px;
+}
+.l_slides, .f_slides, .d_slides, .o_slides {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+/* tooltip */
+.tooltip {
+position: relative;
+display: block;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 120px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0px 5px 0px;
+
+/* Position the tooltip */
+position: absolute;
+z-index: 1;
+/* // bottom: 100%; */
+left: 50%;
+top: 8px;
+margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
+
+
+
+/* // Media Queries */
+@media only screen and (max-width: 645px) {
+    .groups {
+        width: auto;
+    }
+}
+@media only screen and (min-width:646px){
+    .groups {
+        width: 49%;
+    }
+}
+@media only screen and (min-width: 1240px) {
+    .groups {
+        width: auto;
+    }
+}

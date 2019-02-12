@@ -1,0 +1,22 @@
+<div class="nav nav_lg">
+  <ul>
+      <li><a [routerLink]="['home']">Home</a></li>
+      <li><a [routerLink]="['about']">About</a></li>
+      <li><a [routerLink]="['connect']">Connect</a></li>
+      <li><a [routerLink]="['projects']">Projects</a></li>
+      <li><a [routerLink]="['tech']">Technologies</a></li>
+  </ul>
+</div>
+<div class="nav nav_sm">
+  <div class="dropdown">
+      <button (click)="myFunction()" class="btn dropbtn"><img class="btn" src="assets/img/menu.png" alt=""></button>
+      <div id="myDropdown" class="dropdown-content">
+        <a class="btn" (click)="myFunction()" [routerLink]="['home']">Home</a>
+        <a class="btn" (click)="myFunction()" [routerLink]="['about']">About</a>
+        <a class="btn" (click)="myFunction()" [routerLink]="['connect']">Connect</a>
+        <a class="btn" (click)="myFunction()" [routerLink]="['projects']">Projects</a>
+        <a class="btn" (click)="myFunction()" [routerLink]="['tech']">Technologies</a>
+      </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

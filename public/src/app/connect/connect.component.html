@@ -1,0 +1,20 @@
+<div id="c_body">
+  <h1>Want to connect?</h1>
+  <a id="email" href="mailto:albert.garcia10180@gmail.com">albert.garcia10180@gmail.com</a>
+  <h4 class="il-b">Download resume &#x2192;</h4>
+  <a href="assets/img/albert_garcia_dec_2018.pdf" download ><button>Resume</button></a> 
+  <div id="resume_div">
+      <h4 >Or click here &#x2193; to view</h4>
+      <img (click)="onModal()" id="resume" src="assets/img/resume.png" alt="Albert's Resume">
+  </div>
+  <h4 >Click the icons below to redirect</h4>
+  <a href="https://github.com/albert-garcia316"><img class="link" src="assets/img/github.png" alt="Albert's Resume"></a> 
+  <a href="https://www.linkedin.com/in/albertgarcia3/"><img class="link" src="assets/img/linkedin.png" alt="Albert's Resume"></a> 
+  <div id="myModal" class="modal">
+      <span (click)="onClose()" class="close">&times;</span>
+      <h2>Albert's Resume</h2>
+      <img class="modal-content" id="img01" src="assets/img/resume.png">
+  </div>
+</div>
+
+

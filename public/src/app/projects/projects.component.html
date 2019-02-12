@@ -1,0 +1,62 @@
+<div id="p_body">
+  <h1>My Projects</h1>
+  <h2>Draftkit</h2>
+
+  <div id="draft">
+      <div class="desc">
+          <p>Fantasy football app developed in Python using Django</p>
+          <p>2 main features:</p>
+          <p class="pl-20">A) help in planning for fantasy league.</p>
+          <p class="pl-20">B) Ability to draft your own team.</p>
+          <p>Highlights:</p>
+          <p class="pl-20">1) Main showcase is ability to query</p>
+          <p class="pl-20">2) Styled using only CSS</p>
+          <p class="pl-20">3) Single page by way of if-statement logic, no ajax</p>
+      </div>
+      <h4 class="draftText show">front page showing login/register icons and base query</h4>
+      <h4 class="draftText show">CSS styled dropdown menu to show filter options</h4>
+      <h4 class="draftText show">Logged in User Creating a lineup, selected players no longer available</h4>
+      <img class="draftSlides show" src="assets/img/draftkit_1.jpg" alt="">
+      <img class="draftSlides show" src="assets/img/draftkit_2.jpg" alt="">
+      <img class="draftSlides show" src="assets/img/draftkit_3.jpg" alt="">
+      <div class="controller">    
+          <button class="left" (click)="plusDivsDraft(-1)">&#10094;</button>
+          <button class="right" (click)="plusDivsDraft(1)">&#10095;</button>
+          <div class="dot_div">
+              <div class="dot ddot white" (click)="currentDivDraft(1)"></div>
+              <div class="dot ddot white" (click)="currentDivDraft(2)"></div>
+              <div class="dot ddot" (click)="currentDivDraft(3)"></div>
+
+          </div>
+      </div>
+  </div>
+  <h2><a href="http://socket-man.com">socket-man.com</a></h2>
+  <div id="socket">
+      <div class="desc">
+          <p>Multiplayer Pac-man type game built with Express.js, JavaScript, and socket.io, and HTML/CSS</p>
+          <p>Highlights:</p>
+          <p class="pl-20">1) Used sockets to pass the score of other players in real time</p>
+          <p class="pl-20">2) Group Project using GitHub to manage the repository</p>
+          <p class="pl-20">3) Personal Role: Mainly enemy movement logic and CSS</p>
+      </div>
+      <h4 class="socketText show">Handshake to establish the connection</h4>
+      <h4 class="socketText show">Delayed start for enemies, on still at their base</h4>
+      <h4 class="socketText show">Game started with enemies moving towards the player</h4>
+      <h4 class="socketText show">Mobile version with tap/clickable buttons</h4>
+      <img class="socketSlides show" src="assets/img/socketman_1.jpg" alt="">
+      <img class="socketSlides show" src="assets/img/socketman_2.jpg" alt="">
+      <img class="socketSlides show" src="assets/img/socketman_3.jpg" alt="">
+      <img class="socketSlides show" src="assets/img/socketman_4.jpg" alt="">
+      <div class="controller">    
+          <button class="left" (click)="plusDivs(-1)">&#10094;</button>
+          <button class="right" (click)="plusDivs(1)">&#10095;</button>
+          <div class="dot_div">
+              <div class="dot sdot white" (click)="currentDiv(1)"></div>
+              <div class="dot sdot white" (click)="currentDiv(2)"></div>
+              <div class="dot sdot" (click)="currentDiv(3)"></div>
+              <div class="dot sdot" (click)="currentDiv(4)"></div>
+          </div>
+      </div>
+  </div>
+
+</div>

@@ -1,0 +1,114 @@
+/* //About */
+#about_body {
+    background-color: rgb(126, 124, 124);
+    text-align: center;
+    padding-bottom: 50px;
+}
+#about_body h1 {
+    margin-top: 0px;
+}
+#about_body img {
+    width: 40%;
+    max-width: 400px;
+}
+#about {
+    width: 40%;
+    max-height: 360px;
+    max-width: 400px;
+    overflow-y: scroll;
+    background-color: rgba(68, 67, 67, 0.694);
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 20px;
+}
+#about p {
+    font-size: 20px;
+    color: white;
+}
+
+/* // Tech page */
+#tech_body {
+    text-align: center;
+background-color: rgb(126, 124, 124);
+    padding: 10px 0px 50px 0px;
+}
+.tech_box {
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    width: 301px;
+    height: 301px;
+    padding: 0px;
+}
+#tech_body p {
+    font-size: 24px;
+}
+.groups {
+    display: inline-block;
+    text-align: center;
+}
+#tech_body h3{
+    color: black;
+    margin-top: 20px;
+}
+.l_slides, .f_slides, .d_slides, .o_slides {
+    width: 300px;
+    height: 300px;
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+/* // Media Queries */
+@media only screen and (max-width: 480px) {
+    #h_body #photo {
+        width: 35%;
+    }
+}
+@media only screen and (max-width: 720px) {
+    #h_body {
+        height: 270px;
+    }
+    #draft .dot {
+        width: 7px;
+        height: 7px;
+    }
+    #socket .dot {
+        width: 7px;
+        height: 7px;
+    }
+    #socket, #draft {
+        width: 80%;
+    }
+    #about_body img {
+        width: 80%;
+    }
+    #about {
+        width: 80%;
+        max-height: 300px;
+        margin-top: 20px;
+    }
+    #about_body h1 {
+        margin-bottom: 10px;
+    }
+
+}
+@media only screen and (min-width: 720px) {
+    #h_body {
+        height: 550px;
+    }
+    #socket, #draft {
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #h_body {
+        height: auto;
+    }
+    #socket, #draft {
+        width: 60%;
+    }
+}
